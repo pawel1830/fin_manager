@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% block content %}
+
+<section>
+{% if request.user.is_authenticated %}
+    {% if wallets_list %}
+        {% for w in wallets_list %}
+    <article>
+        <h1>{{w.name}}</h1>
+        Same wplaty: {{ w.sum_pay}}
+        Same wyplaty: {{ w.sum_payoff }}
+
+                <a class="confirmation"  href="{% url 'wallet-delete' pk=w.name %}"><span class="glyphicon glyphicon-remove"></span></a></article>
+
+        {% endfor %}
+
+    {% endif %}
+    {% if transactions %}
+        <ul>
+            {% for t in transactions %}
+                <li>{{ t.title }} - {{ t.amount }} - {{ t.date }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        Tu będą Twoje operacje ale że nie masz żadnych bo jestes zerem
+    {% endif %}
+    <button class="btn btn-primary">Tu dodasz nowa transakcje</button>
+{% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block content %}
+<section id="register">
+  <h2>Add new Wallet</h2>
+  <form method="post">
+    {% csrf_token %}
+
+  {{ form.as_p }}
+    <button class="btn btn-primary" type="submit">Save</button>
+  </form>
+</section>
+{% endblock %}

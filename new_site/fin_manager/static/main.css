@@ -1,0 +1,143 @@
+
+
+main#register {
+	margin-top:70px;
+	padding-bottom:70px;
+}
+section#register {
+	width: 350px;
+    margin: 50px auto;
+    border: solid 1px;
+	padding:20px;
+
+	
+}
+section {
+	width: 100%;
+    margin: 50px auto;
+	padding:20px;
+
+
+}
+footer#register {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  height:50px;
+
+
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+h1#gallery {
+
+	background-image:url('head2.jpg');
+
+}
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.errorlist li
+{
+list-style-type: none;
+border: 2px solid red;
+border-radius: 10px;
+padding-left: 10px;
+background-color:#dc3545;
+}
+
+figcaption {
+
+    padding-bottom:8px;
+}
+
+ul.navigation li.left {
+    float: left;
+}
+
+ul.navigation li a.main-menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#username
+{
+    display:block;
+    color: white;
+    padding: 14px 16px;
+}
+.btn-mine:hover {
+
+background-color: #555;
+color: white;
+text-decoration: none;
+}
+li a:href {
+text-decoration: none;
+}
+/*li a:hover {
+    background-color: #181;
+    text-decoration: none;
+}
+/*
+
+li#user a:hover {
+    background-color: #339;
+}
+
+*/
+main {
+display: block;
+text-align: center;
+    padding: 14px 16px;
+}
+nav {
+    position: fixed;
+    z-index:100;
+    top:0;
+    width:100%;
+    
+}
+header {
+    padding-top:30px;
+    
+}
+body {
+    width:100%;
+    margin: 0 auto;
+}
+
+a:hover img{
+
+    border-style:solid;
+    border-color:#333;
+}
+ul.navigation li.right { float:right; }
+section#row {
+
+    height:500px;
+    border-style:solid;
+    
+}
