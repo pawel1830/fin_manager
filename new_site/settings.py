@@ -102,25 +102,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}
-# DATABASES = {
-#    'default': {
-#        #'ENGINE': "django_pyodbc",
-#        'ENGINE': 'sql_server.pyodbc',
-#        'HOST': "abd.wwsi.edu.pl",
-#        'USER': "JiPPpgorka",
-#        'PASSWORD': "qazwsx123456",
-#        'NAME': "DjangoPGorka",
-#         'PORT': 1433,
-#        'OPTIONS': {
-#             'driver_supports_utf8': True,
-#            'host_is_server': True,
-#             'use_legacy_datetime': True,
-#            'autocommit': True,
-#            'unicode_results': True,
-#        },
-#    }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
